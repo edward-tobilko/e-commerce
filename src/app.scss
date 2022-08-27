@@ -1,0 +1,43 @@
+.body {
+  display: flex;
+  position: relative;
+  .body__settings {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+  }
+  .body__pages {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.apps__container {
+  max-width: 1240px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+.dark {
+  background: rgb(43, 40, 40);
+}
+
+.goBack__btn {
+  background: initial;
+  outline: none;
+  svg {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    color: #555;
+
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
