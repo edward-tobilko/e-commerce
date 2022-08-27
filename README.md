@@ -7,4 +7,6 @@ In this project created a calendar, a kanban, an editor, and 3 pages for orders,
 You can change the color mode of the page and the color of the UI components. Also, you can log out and log in on the page.
 It all saves to localStorage.
 
+- api: https://ej2.syncfusion.com/react/documentation/chart/getting-started/ - charts library 
+
 ### Start project: `npm start`
