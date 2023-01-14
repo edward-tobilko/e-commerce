@@ -1,7 +1,9 @@
 import React from "react";
-import { Form, Input, Button } from "antd";
-import { useStateContext } from "../../contexts/ContextProvider";
 import { useLocation, useNavigate } from "react-router-dom";
+
+import { useStateContext } from "../../contexts/ContextProvider";
+
+import { Form, Input, Button } from "antd";
 
 const Login = () => {
   const { currentColor, setAuth } = useStateContext();

@@ -1,8 +1,10 @@
 import React from "react";
+
+import OrderBtn from "../components/UI/OrderBtn";
+
 import { TiArrowBackOutline } from "react-icons/ti";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import OrderBtn from "../components/UI/OrderBtn";
 
 const Product = () => {
   const product = useSelector((state) => state.currentProduct.currentProduct);

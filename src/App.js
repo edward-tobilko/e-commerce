@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate,
 } from "react-router-dom";
 import "./app.scss";
+
 import Header from "./pages/header/Header";
 import {
   Orders,
@@ -29,14 +30,16 @@ import {
   MyProfile,
   Product,
 } from "./pages";
-import SettingComponent from "./components/SettingComponent";
-import { useStateContext } from "./contexts/ContextProvider";
-import Tooltip from "@mui/material/Tooltip";
-import { FiSettings } from "react-icons/fi";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
-import { CircularProgress } from "@mui/material";
+import SettingComponent from "./components/SettingComponent";
+import { useStateContext } from "./contexts/ContextProvider";
 import ErrorPage from "./pages/ErrorPage";
+
+import { CircularProgress } from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
+
+import { FiSettings } from "react-icons/fi";
 
 const App = () => {
   const {
@@ -55,7 +58,7 @@ const App = () => {
       setAuth(true);
     }
     setIsLoading(false);
-  }, []);
+  }, [setAuth, setIsLoading]);
 
   if (isLoading) {
     return (
@@ -133,10 +136,7 @@ const App = () => {
                     <Route path="*" element={<ErrorPage />} />
 
                     {/* Redirect */}
-                    <Route
-                      path="/"
-                      element={isAuth ? <Navigate to="/" /> : null}
-                    />
+                    <Route path="*" element={<Navigate to="/" replace />} />
                   </Routes>
 
                   {/* Setting component */}

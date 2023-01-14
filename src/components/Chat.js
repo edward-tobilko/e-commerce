@@ -1,12 +1,14 @@
 import React from "react";
-import { MdOutlineCancel } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
+
 import { useStateContext } from "../contexts/ContextProvider";
 import avatar from "../images/avatar.jpg";
 import avatar2 from "../images/avatar2.jpg";
 import avatar3 from "../images/avatar3.png";
 import avatar4 from "../images/avatar4.jpg";
-import { useNavigate } from "react-router-dom";
+
 import Fade from "react-reveal/Fade";
+import { MdOutlineCancel } from "react-icons/md";
 
 // data
 const chatData = [

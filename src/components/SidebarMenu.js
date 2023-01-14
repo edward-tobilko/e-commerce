@@ -1,9 +1,11 @@
 import React, { useContext } from "react";
 import styled, { css } from "styled-components";
-import { SidebarContext } from "../contexts/SidebarContext";
-import { SiTrustedshops } from "react-icons/si";
 import "./components-style.scss";
 import { Link } from "react-router-dom";
+
+import { SidebarContext } from "../contexts/SidebarContext";
+
+import { SiTrustedshops } from "react-icons/si";
 import {
   AiOutlineCalendar,
   AiOutlineShoppingCart,

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   ColumnsDirective,
   GridComponent,
@@ -16,7 +17,7 @@ import avatar from "../images/avatar.jpg";
 import avatar2 from "../images/avatar2.jpg";
 import avatar3 from "../images/avatar3.png";
 import avatar4 from "../images/avatar4.jpg";
-import { useNavigate } from "react-router-dom";
+
 import { TiArrowBackOutline } from "react-icons/ti";
 
 // auxiliaries functions-components for the employeesGrid

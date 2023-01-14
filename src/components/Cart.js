@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+
 import { MdOutlineCancel } from "react-icons/md";
 import { TiMinusOutline, TiPlusOutline } from "react-icons/ti";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+
+
 import { useStateContext } from "../contexts/ContextProvider";
 import {
   decrease,

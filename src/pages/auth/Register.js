@@ -1,7 +1,9 @@
 import React from "react";
-import { Form, Input, Select, Checkbox, Button } from "antd";
-import { useStateContext } from "../../contexts/ContextProvider";
 import { NavLink, useNavigate } from "react-router-dom";
+
+import { useStateContext } from "../../contexts/ContextProvider";
+
+import { Form, Input, Select, Checkbox, Button } from "antd";
 
 const Register = () => {
   const { currentColor, setAuth } = useStateContext();

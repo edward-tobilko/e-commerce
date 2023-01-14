@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+
+import { useStateContext } from "../contexts/ContextProvider";
+
 import { AiOutlineDelete } from "react-icons/ai";
 import { MdPlaylistAdd } from "react-icons/md";
 import { RiEditLine } from "react-icons/ri";
-import { useStateContext } from "../contexts/ContextProvider";
 
 const MyTasks = () => {
   const { currentColor } = useStateContext();

@@ -1,9 +1,11 @@
-import { Tooltip } from "antd";
 import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+
 import { setCurrentProduct } from "../redux/reducers/currentProduct";
 import OrderBtn from "./UI/OrderBtn";
+
+import { Tooltip } from "antd";
 
 const OrderComponent = ({ item }) => {
   const navigate = useNavigate();

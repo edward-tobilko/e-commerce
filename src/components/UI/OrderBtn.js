@@ -1,6 +1,7 @@
 import React from "react";
-import { useStateContext } from "../../contexts/ContextProvider";
 import { useDispatch, useSelector } from "react-redux";
+
+import { useStateContext } from "../../contexts/ContextProvider";
 import {
   removeProductFromCart,
   setProductInCart,

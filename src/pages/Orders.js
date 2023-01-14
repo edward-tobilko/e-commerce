@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import ReactPaginate from "react-paginate";
+import { useNavigate } from "react-router-dom";
+
 import OrdersHeader from "../components/OrdersHeader";
 import OrderComponent from "../components/OrderComponent";
 import product1 from "../images/product1.jpg";
@@ -8,10 +11,10 @@ import product4 from "../images/product4.jpg";
 import product5 from "../images/product5.jpg";
 import product6 from "../images/product6.jpg";
 import product7 from "../images/product7.jpg";
-import ReactPaginate from "react-paginate";
+
 import { MdOutlineSkipNext, MdOutlineSkipPrevious } from "react-icons/md";
 import { TiArrowBackOutline } from "react-icons/ti";
-import { useNavigate } from "react-router-dom";
+
 import { Rate } from "antd";
 
 // data

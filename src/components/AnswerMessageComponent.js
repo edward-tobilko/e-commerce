@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+
 import { GrSend } from "react-icons/gr";
 import { MdOutlineCancel, MdOutlineDoneAll } from "react-icons/md";
+
 import { useStateContext } from "../contexts/ContextProvider";
 import avatar1 from "./../images/avatar.jpg";
 import avatar2 from "./../images/avatar2.jpg";

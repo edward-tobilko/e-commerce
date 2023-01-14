@@ -1,5 +1,5 @@
-import { Fade, Button, LinearProgress } from "@mui/material";
 import React, { useRef, useState } from "react";
+
 import { BsBoxSeam } from "react-icons/bs";
 import { FiBarChart } from "react-icons/fi";
 import { HiOutlineRefresh } from "react-icons/hi";
@@ -7,10 +7,13 @@ import {
   MdOutlineFileDownloadDone,
   MdOutlineSupervisorAccount,
 } from "react-icons/md";
+
 import { SparkLine, StackedComponent } from "../components";
 import { useStateContext } from "../contexts/ContextProvider";
 import "./pages.scss";
 import video from "./../images/eCommerce.mp4";
+
+import { Fade, Button, LinearProgress } from "@mui/material";
 
 // data
 const earningData = [

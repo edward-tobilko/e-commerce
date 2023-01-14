@@ -1,9 +1,16 @@
 import React, { useContext, useRef } from "react";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
+import { NavLink, useNavigate } from "react-router-dom";
+
 import { SidebarContext } from "../contexts/SidebarContext";
 import BurgerBtn from "./UI/BurgerBtn";
 import { SidebarMenu } from "./SidebarMenu";
 import useOnClickOutside from "../hooks/useOnClickOutsite";
+import { Cart, Chat, Notification, UserProfile } from "../components";
+import avatar from "./../images/avatar3.png";
+import { useStateContext } from "../contexts/ContextProvider";
+
 import { RiMessengerLine } from "react-icons/ri";
 import { IoIosLogIn, IoMdExit, IoMdNotificationsOutline } from "react-icons/io";
 import {
@@ -11,14 +18,10 @@ import {
   MdOutlineHowToReg,
   MdOutlineKeyboardArrowUp,
 } from "react-icons/md";
-import avatar from "./../images/avatar3.png";
-import { BsCart2 } from "react-icons/bs";
-import { useStateContext } from "../contexts/ContextProvider";
-import Tooltip from "@mui/material/Tooltip";
-import { Cart, Chat, Notification, UserProfile } from "../components";
 import { RiReactjsFill } from "react-icons/ri";
-import { useSelector } from "react-redux";
-import { NavLink, useNavigate } from "react-router-dom";
+import { BsCart2 } from "react-icons/bs";
+
+import Tooltip from "@mui/material/Tooltip";
 
 const Navbar = styled.div`
   position: fixed;

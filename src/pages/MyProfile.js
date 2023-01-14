@@ -1,9 +1,11 @@
 import React from "react";
+
+import photo from "./../images/avatar.jpg";
+
 import { AiFillYoutube } from "react-icons/ai";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { RiFacebookCircleLine, RiLinkedinFill } from "react-icons/ri";
 import { SiGmail } from "react-icons/si";
-import photo from "./../images/avatar.jpg";
 
 // data
 const socials = [
@@ -42,7 +44,7 @@ const MyProfile = () => {
                   >
                     <a
                       href="https://www.google.com"
-                      target={"_blank"}
+                      target="_blank"
                       className="account__card-content__details-social__link"
                       style={{ color: item.backgroundColor }}
                     >

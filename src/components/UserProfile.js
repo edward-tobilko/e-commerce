@@ -1,10 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import { CgProfile } from "react-icons/cg";
 import { FiCreditCard } from "react-icons/fi";
 import { MdForwardToInbox, MdOutlineCancel } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
+
 import { useStateContext } from "../contexts/ContextProvider";
 import avatar from "../images/avatar3.png";
+
 import Fade from "react-reveal/Fade";
 
 const UserProfile = () => {
