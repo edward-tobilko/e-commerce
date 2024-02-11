@@ -10,7 +10,7 @@ import {
   HiloSeries,
   Crosshair,
 } from "@syncfusion/ej2-react-charts";
-import React from "react";
+
 import OrdersHeader from "../../components/OrdersHeader";
 import { useStateContext } from "../../contexts/ContextProvider";
 
@@ -2320,15 +2320,18 @@ const FinancialPrimaryYAxis = {
 };
 
 const initialDate = new Date(2017, 1, 1);
+
 function filterValue(value) {
   if (value.x >= initialDate) {
     return value.x, value.high, value.low;
   }
 }
+
 const resultValue = financialChartData.filter(filterValue);
 
 const Financial = () => {
   const { currentMode } = useStateContext();
+
   return (
     <div className="apps__container">
       <OrdersHeader category="Financial chart" title="Financial" />

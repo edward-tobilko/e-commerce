@@ -1,7 +1,8 @@
-import React from "react";
-import { MdOutlineCancel } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
+
+import { MdOutlineCancel } from "react-icons/md";
 import { BsCheck } from "react-icons/bs";
+
 import { useStateContext } from "../contexts/ContextProvider";
 
 // data

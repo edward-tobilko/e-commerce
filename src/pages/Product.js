@@ -1,13 +1,13 @@
-import React from "react";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 import OrderBtn from "../components/UI/OrderBtn";
 
 import { TiArrowBackOutline } from "react-icons/ti";
-import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
 
 const Product = () => {
   const product = useSelector((state) => state.currentProduct.currentProduct);
+
   const navigate = useNavigate();
 
   return (
@@ -15,6 +15,7 @@ const Product = () => {
       <button onClick={() => navigate(-1)} className="goBack__btn">
         <TiArrowBackOutline />
       </button>
+
       <div className="product">
         <div className="product__left">
           <img
@@ -34,6 +35,7 @@ const Product = () => {
             <p className="product__left-about-rate"> {product.rate} </p>
           </div>
         </div>
+
         <div className="product__right">
           <p className="product__right-desc"> {product.descriptions} </p>
           <OrderBtn item={product} />

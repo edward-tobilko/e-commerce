@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { CgProfile } from "react-icons/cg";
@@ -12,6 +11,7 @@ import Fade from "react-reveal/Fade";
 
 const UserProfile = () => {
   const { currentColor, setIsClicked, setAuth } = useStateContext();
+
   const navigate = useNavigate();
 
   const goToTasks = () => {

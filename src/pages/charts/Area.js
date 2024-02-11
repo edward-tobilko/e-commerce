@@ -1,6 +1,3 @@
-import React from "react";
-import OrdersHeader from "../../components/OrdersHeader";
-import { useStateContext } from "../../contexts/ContextProvider";
 import {
   ChartComponent,
   Inject,
@@ -10,6 +7,9 @@ import {
   Legend,
   SplineAreaSeries,
 } from "@syncfusion/ej2-react-charts";
+
+import OrdersHeader from "../../components/OrdersHeader";
+import { useStateContext } from "../../contexts/ContextProvider";
 
 // data
 const areaPrimaryXAxis = {

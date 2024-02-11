@@ -1,7 +1,7 @@
-import React from "react";
-import Button from "@mui/material/Button";
-import { useStateContext } from "../../contexts/ContextProvider";
 import { MdOutlineQuestionAnswer } from "react-icons/md";
+import Button from "@mui/material/Button";
+
+import { useStateContext } from "../../contexts/ContextProvider";
 
 const MyButton = ({ text }) => {
   const { currentColor, handleClick } = useStateContext();

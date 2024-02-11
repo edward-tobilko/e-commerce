@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import {
   ColumnsDirective,
@@ -12,7 +11,9 @@ import {
   Toolbar,
   Selection,
 } from "@syncfusion/ej2-react-grids";
+
 import OrdersHeader from "../components/OrdersHeader";
+
 import avatar from "../images/avatar.jpg";
 import avatar2 from "../images/avatar2.jpg";
 import avatar3 from "../images/avatar3.png";
@@ -34,6 +35,7 @@ const customerGridImage = (props) => (
     </div>
   </div>
 );
+
 const customerGridStatus = (props) => (
   <div className="customer__status">
     <p style={{ background: props.StatusBg }} className="customer__status-bg" />
@@ -94,6 +96,7 @@ const customersGrid = [
     isPrimaryKey: true,
   },
 ];
+
 const customersData = [
   {
     CustomerID: 1001,

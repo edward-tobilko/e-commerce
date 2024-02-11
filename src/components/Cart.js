@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 import { MdOutlineCancel } from "react-icons/md";
 import { TiMinusOutline, TiPlusOutline } from "react-icons/ti";
 
-
 import { useStateContext } from "../contexts/ContextProvider";
+
 import {
   decrease,
   getCartTotal,
@@ -15,8 +15,11 @@ import {
 
 const Cart = () => {
   const { setIsClicked, currentColor } = useStateContext();
+
   const { productInCart, totalAmount } = useSelector((state) => state.cart);
+
   const dispatch = useDispatch();
+
   const navigate = useNavigate();
 
   const handleClickInOrder = () => {

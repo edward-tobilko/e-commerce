@@ -1,7 +1,10 @@
-import React, { useContext, useRef } from "react";
-import styled from "styled-components";
+import { useContext, useRef } from "react";
 import { useSelector } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
+
+import styled from "styled-components";
+
+import Tooltip from "@mui/material/Tooltip";
 
 import { SidebarContext } from "../contexts/SidebarContext";
 import BurgerBtn from "./UI/BurgerBtn";
@@ -20,8 +23,6 @@ import {
 } from "react-icons/md";
 import { RiReactjsFill } from "react-icons/ri";
 import { BsCart2 } from "react-icons/bs";
-
-import Tooltip from "@mui/material/Tooltip";
 
 const Navbar = styled.div`
   position: fixed;
@@ -42,10 +43,14 @@ const Navbar = styled.div`
 
 const Sidebar = () => {
   const node = useRef();
+
   const { isOpenSidebar, toggleMenuMode } = useContext(SidebarContext);
+
   const { isClicked, handleClick, currentColor, isAuth, setAuth } =
     useStateContext();
+
   const { productInCart } = useSelector((state) => state.cart);
+
   const navigate = useNavigate();
 
   useOnClickOutside(node, () => {

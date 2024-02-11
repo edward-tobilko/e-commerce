@@ -1,4 +1,3 @@
-import React from "react";
 import {
   ScheduleComponent,
   Day,
@@ -10,6 +9,7 @@ import {
   DragAndDrop,
   Resize,
 } from "@syncfusion/ej2-react-schedule";
+
 import OrdersHeader from "../../components/OrdersHeader";
 
 // data

@@ -1,6 +1,3 @@
-import React from "react";
-import OrdersHeader from "../../components/OrdersHeader";
-import { useStateContext } from "../../contexts/ContextProvider";
 import {
   ChartComponent,
   Inject,
@@ -12,6 +9,9 @@ import {
   ColumnSeries,
   Tooltip,
 } from "@syncfusion/ej2-react-charts";
+
+import OrdersHeader from "../../components/OrdersHeader";
+import { useStateContext } from "../../contexts/ContextProvider";
 
 // data
 const barPrimaryXAxis = {
@@ -89,6 +89,7 @@ const barCustomSeries = [
 
 const Bar = () => {
   const { currentMode } = useStateContext();
+
   return (
     <div className="apps__container">
       <OrdersHeader category="Area chart" title="Bar" />

@@ -1,17 +1,21 @@
-import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import { useStateContext } from "../contexts/ContextProvider";
 
 import { TiArrowBackOutline } from "react-icons/ti";
+
 import { Form, Input, Cascader, Select, Checkbox, Button } from "antd";
 
 const Order = () => {
   const { totalAmount } = useSelector((state) => state.cart);
+
   const { currentColor } = useStateContext();
+
   const { Option } = Select;
+
   const [form] = Form.useForm();
+
   const navigate = useNavigate();
 
   // For residence

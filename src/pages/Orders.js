@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ReactPaginate from "react-paginate";
 import { useNavigate } from "react-router-dom";
 
 import OrdersHeader from "../components/OrdersHeader";
 import OrderComponent from "../components/OrderComponent";
+
 import product1 from "../images/product1.jpg";
 import product2 from "../images/product2.jpg";
 import product3 from "../images/product3.jpg";
@@ -742,6 +743,7 @@ const ordersData = [
 
 const Orders = () => {
   const [pageNumber, setPageNumber] = useState(0);
+
   const navigate = useNavigate();
 
   const totalNumbersInPage = 10;
@@ -752,6 +754,7 @@ const Orders = () => {
     pagesVisited,
     pagesVisited + totalNumbersInPage,
   );
+
   const changePage = ({ selected }) => {
     setPageNumber(selected);
   };
@@ -759,9 +762,11 @@ const Orders = () => {
   return (
     <div className="orders">
       <OrdersHeader title="Orders" />
+
       <button onClick={() => navigate(-1)} className="goBack__btn">
         <TiArrowBackOutline />
       </button>
+
       <div className="orders__container">
         <ReactPaginate
           nextLabel={<MdOutlineSkipNext />}
@@ -771,6 +776,7 @@ const Orders = () => {
           activeClassName={"paginationActive"}
           containerClassName={"paginationBtns"}
         />
+
         {displayProducts.map((item) => {
           return <OrderComponent key={item.id} item={item} />;
         })}

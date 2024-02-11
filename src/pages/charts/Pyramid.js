@@ -8,7 +8,7 @@ import {
   AccumulationSeriesCollectionDirective,
   AccumulationSeriesDirective,
 } from "@syncfusion/ej2-react-charts";
-import React from "react";
+
 import OrdersHeader from "../../components/OrdersHeader";
 import { useStateContext } from "../../contexts/ContextProvider";
 

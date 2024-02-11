@@ -1,6 +1,6 @@
-import React from "react";
-import OrdersHeader from "../../components/OrdersHeader";
 import { ColorPickerComponent } from "@syncfusion/ej2-react-inputs";
+
+import OrdersHeader from "../../components/OrdersHeader";
 
 // custom color picker component
 const CustomColorPicker = ({ id, mode }) => {
@@ -8,6 +8,7 @@ const CustomColorPicker = ({ id, mode }) => {
     document.getElementById("preview").style.backgroundColor =
       event.currentValue.hex;
   };
+
   return (
     <ColorPickerComponent
       id={id}

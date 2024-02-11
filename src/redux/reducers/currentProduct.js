@@ -15,4 +15,5 @@ const currentProductSlice = createSlice({
 });
 
 export const { setCurrentProduct } = currentProductSlice.actions;
+
 export default currentProductSlice.reducer;

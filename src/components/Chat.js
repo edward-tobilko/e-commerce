@@ -1,7 +1,7 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { useStateContext } from "../contexts/ContextProvider";
+
 import avatar from "../images/avatar.jpg";
 import avatar2 from "../images/avatar2.jpg";
 import avatar3 from "../images/avatar3.png";
@@ -40,6 +40,7 @@ const chatData = [
 
 const Chat = () => {
   const { currentColor, setIsClicked } = useStateContext();
+
   const navigate = useNavigate();
 
   const handleToAllMassages = () => {

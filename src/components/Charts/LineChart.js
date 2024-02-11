@@ -8,7 +8,7 @@ import {
   Legend,
   LineSeries,
 } from "@syncfusion/ej2-react-charts";
-import React from "react";
+
 import { useStateContext } from "../../contexts/ContextProvider";
 
 // data

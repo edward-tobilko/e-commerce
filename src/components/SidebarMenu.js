@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+
 import styled, { css } from "styled-components";
 import "./components-style.scss";
-import { Link } from "react-router-dom";
 
 import { SidebarContext } from "../contexts/SidebarContext";
 

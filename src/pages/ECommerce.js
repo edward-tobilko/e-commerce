@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 import { BsBoxSeam } from "react-icons/bs";
 import { FiBarChart } from "react-icons/fi";
@@ -10,10 +10,10 @@ import {
 
 import { SparkLine, StackedComponent } from "../components";
 import { useStateContext } from "../contexts/ContextProvider";
-import "./pages.scss";
 import video from "./../images/eCommerce.mp4";
 
 import { Fade, Button, LinearProgress } from "@mui/material";
+import "./pages.scss";
 
 // data
 const earningData = [
@@ -57,7 +57,9 @@ const earningData = [
 
 const ECommerce = () => {
   const [progress, setProgress] = useState(0);
+
   const timerRef = useRef();
+
   const { currentColor } = useStateContext();
 
   const handleClickQuery = () => {

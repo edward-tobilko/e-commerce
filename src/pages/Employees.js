@@ -11,13 +11,13 @@ import {
   Toolbar,
   Search,
 } from "@syncfusion/ej2-react-grids";
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { GrLocation } from "react-icons/gr";
 import { TiArrowBackOutline } from "react-icons/ti";
 
 import OrdersHeader from "../components/OrdersHeader";
+
 import avatar from "../images/avatar.jpg";
 import avatar2 from "../images/avatar2.jpg";
 import avatar3 from "../images/avatar3.png";
@@ -30,6 +30,7 @@ const gridEmployeeProfile = (props) => (
     <p>{props.Name}</p>
   </div>
 );
+
 const gridEmployeeCountry = (props) => (
   <div className="flex items-center justify-center gap-2">
     <GrLocation />
@@ -80,6 +81,7 @@ const employeesGrid = [
     textAlign: "Center",
   },
 ];
+
 const employeesData = [
   {
     EmployeeID: 1,

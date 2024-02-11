@@ -1,5 +1,3 @@
-import React from "react";
-
 const OrdersHeader = ({ title }) => {
   return (
     <div className="orders__header">

@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import {
   HashRouter as Router,
   Routes,
   Route,
   Navigate,
 } from "react-router-dom";
+
 import "./app.scss";
 
 import Header from "./pages/header/Header";

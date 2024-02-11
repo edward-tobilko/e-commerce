@@ -1,5 +1,5 @@
-import React from "react";
 import OrdersHeader from "../../components/OrdersHeader";
+
 import {
   KanbanComponent,
   ColumnsDirective,
@@ -18,6 +18,7 @@ export const kanbanGrid = [
   },
   { headerText: "Done", keyField: "Close", allowToggle: true },
 ];
+
 const kanbanData = [
   {
     Id: "Task 1",

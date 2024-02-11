@@ -1,5 +1,6 @@
-import React from "react";
+
 import OrdersHeader from "../../components/OrdersHeader";
+
 import {
   HtmlEditor,
   Image,

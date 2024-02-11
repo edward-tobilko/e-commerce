@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import { GrSend } from "react-icons/gr";
 import { MdOutlineCancel, MdOutlineDoneAll } from "react-icons/md";
@@ -62,13 +62,12 @@ const AnswerMessageComponent = () => {
       me: <MdOutlineDoneAll />,
     },
   ]);
-
-  // for a new message;
   const [newMessage, setNewMessage] = useState({
     msg: "",
     img: avatar1,
     me: <MdOutlineDoneAll />,
   });
+
   const { setIsClicked } = useStateContext();
 
   const createNewMessage = (newMess) => {

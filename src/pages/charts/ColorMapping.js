@@ -1,4 +1,3 @@
-import React from "react";
 import {
   ChartComponent,
   SeriesCollectionDirective,
@@ -11,6 +10,7 @@ import {
   RangeColorSettingsDirective,
   RangeColorSettingDirective,
 } from "@syncfusion/ej2-react-charts";
+
 import { useStateContext } from "./../../contexts/ContextProvider";
 import OrdersHeader from "./../../components/OrdersHeader";
 
@@ -66,6 +66,7 @@ const ColorMappingPrimaryYAxis = {
 
 const ColorMapping = () => {
   const { currentMode } = useStateContext();
+
   return (
     <div className="apps__container">
       <OrdersHeader

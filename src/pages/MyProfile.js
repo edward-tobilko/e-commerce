@@ -1,5 +1,3 @@
-import React from "react";
-
 import photo from "./../images/avatar.jpg";
 
 import { AiFillYoutube } from "react-icons/ai";

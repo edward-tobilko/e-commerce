@@ -1,6 +1,7 @@
-import React from "react";
 import { RiErrorWarningLine } from "react-icons/ri";
+
 import { useStateContext } from "../contexts/ContextProvider";
+
 import Fade from "react-reveal/Fade";
 
 const Notification = () => {

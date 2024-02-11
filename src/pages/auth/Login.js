@@ -1,4 +1,3 @@
-import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import { useStateContext } from "../../contexts/ContextProvider";
@@ -7,8 +6,11 @@ import { Form, Input, Button } from "antd";
 
 const Login = () => {
   const { currentColor, setAuth } = useStateContext();
+
   const [form] = Form.useForm();
+
   const navigate = useNavigate();
+
   const location = useLocation();
 
   const redirectPath = location.state?.path || "/";

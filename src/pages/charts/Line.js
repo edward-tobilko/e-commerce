@@ -1,4 +1,3 @@
-import React from "react";
 import { LineChart } from "../../components";
 import OrdersHeader from "../../components/OrdersHeader";
 

@@ -1,9 +1,9 @@
-import React from "react";
-
 import { MyButton } from "../components";
 import AnswerMessageComponent from "../components/AnswerMessageComponent";
 import OrdersHeader from "../components/OrdersHeader";
+
 import { useStateContext } from "../contexts/ContextProvider";
+
 import avatar from "../images/avatar.jpg";
 import avatar2 from "../images/avatar2.jpg";
 import avatar3 from "../images/avatar3.png";
@@ -109,10 +109,7 @@ const Messages = () => {
 
                 <div className="chat__container-messages messages__container">
                   <div>
-                    <h3 className="chat__container-message">
-                      {" "}
-                      {item.message}{" "}
-                    </h3>
+                    <h3 className="chat__container-message">{item.message}</h3>
                     <p className="chat__container-description">{item.desc}</p>
                     <p className="chat__container-time">{item.time}</p>
                   </div>
@@ -125,6 +122,7 @@ const Messages = () => {
             ))}
           </ul>
         </div>
+
         {isClicked.answerMessage && <AnswerMessageComponent />}
       </div>
     </div>

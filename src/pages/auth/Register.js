@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 import { useStateContext } from "../../contexts/ContextProvider";
@@ -7,8 +6,11 @@ import { Form, Input, Select, Checkbox, Button } from "antd";
 
 const Register = () => {
   const { currentColor, setAuth } = useStateContext();
+
   const { Option } = Select;
+
   const [form] = Form.useForm();
+
   const navigate = useNavigate();
 
   const formItemLayout = {

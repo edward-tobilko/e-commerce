@@ -1,10 +1,11 @@
-import React from "react";
-import { useStateContext } from "../contexts/ContextProvider";
 import { useLocation, Navigate } from "react-router-dom";
+
+import { useStateContext } from "../contexts/ContextProvider";
 
 // HOC component
 const RequireAuth = ({ children }) => {
   const { isAuth } = useStateContext();
+
   const location = useLocation();
 
   if (!isAuth) {
